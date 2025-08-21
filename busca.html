@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca - EliteMotors</title>
+    <link rel="stylesheet" href="elitemotors.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-top-content">
+                    <span>Segunda - Sábado: 8:00 - 18:00</span>
+                    <span>📞 (11) 98765-4321</span>
+                </div>
+            </div>
+            <div class="header-main">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><img src="https://sdmntpreastus.oaiusercontent.com/files/00000000-c36c-61f9-b200-13164c476d3d/raw?se=2025-08-21T00%3A16%3A38Z&sp=r&sv=2024-08-04&sr=b&scid=8ac1242c-59c5-5b3a-ad33-e90f1da83606&skoid=02b7f7b5-29f8-416a-aeb6-99464748559d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-20T17%3A59%3A27Z&ske=2025-08-21T17%3A59%3A27Z&sks=b&skv=2024-08-04&sig=vrzmU6T4TNsHGhZe9dIcOJEFjB6wNia6RH51dsa4N3c%3D" alt="" width="30px" height="30px"></div>
+                    <h1>EliteMotors</h1>
+                </a>
+                <nav class="nav">
+                    <a href="index.html">Início</a>
+                    <a href="grade-produtos.html">Veículos</a>
+                    <a href="cadastro.html">Cadastro</a>
+                    <a href="quem-somos.html">Sobre</a>
+                    <a href="contato.html">Contato</a>
+                </nav>
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Buscar veículos..." value="Toyota Corolla">
+                    <button class="btn">🔍</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <section style="background: var(--muted); padding: 1rem 0;">
+        <div class="container">
+            <nav style="font-size: 0.875rem; color: var(--muted-foreground);">
+                <a href="index.html" style="text-decoration: none; color: inherit;">Início</a>
+                <span> / </span>
+                <span style="color: var(--primary);">Resultados da busca</span>
+            </nav>
+        </div>
+    </section>
+
+    
+    <main class="main-content">
+        <div class="container">
+            
+            <section style="padding: 2rem 0; border-bottom: 1px solid var(--border); margin-bottom: 2rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <div>
+                        <h1>Resultados para "Toyota Corolla"</h1>
+                        <p style="color: var(--muted-foreground);">Encontrados 4 veículos</p>
+                    </div>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <span style="font-size: 0.875rem; color: var(--muted-foreground);">Ordenar por:</span>
+                        <select class="filter-select" style="width: 180px;">
+                            <option>Mais Relevante</option>
+                            <option>Menor Preço</option>
+                            <option>Maior Preço</option>
+                            <option>Mais Novo</option>
+                            <option>Menor KM</option>
+                        </select>
+                    </div>
+                </div>
+                
+                
+                <div style="background: white; padding: 1rem; border-radius: var(--radius); box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                    <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                        <span style="font-size: 0.875rem; color: var(--muted-foreground);">Filtros aplicados:</span>
+                        <span class="badge" style="background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">
+                            Toyota Corolla ✕
+                        </span>
+                        <button class="btn btn-outline btn-sm">+ Adicionar Filtros</button>
+                        <button class="btn btn-ghost btn-sm" style="margin-left: auto;">Limpar Filtros</button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="content-grid">
+                
+                <aside class="filters">
+                    <h3>Refinar Busca</h3>
+                    
+                    <div class="filter-group">
+                        <label>Faixa de Preço</label>
+                        <div class="price-display">R$ 50.000 - R$ 120.000</div>
+                        <input type="range" class="price-slider" min="50000" max="200000" value="120000">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--muted-foreground);">
+                            <span>R$ 50k</span>
+                            <span>R$ 200k</span>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Ano</label>
+                        <div class="filter-grid">
+                            <select class="filter-select">
+                                <option>2020</option>
+                                <option>2015</option>
+                                <option>2010</option>
+                            </select>
+                            <select class="filter-select">
+                                <option>2024</option>
+                                <option>2023</option>
+                                <option>2020</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Quilometragem</label>
+                        <select class="filter-select">
+                            <option>Até 30.000 km</option>
+                            <option>Até 50.000 km</option>
+                            <option>Até 100.000 km</option>
+                            <option>Mais de 100.000 km</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Combustível</label>
+                        <select class="filter-select">
+                            <option>Flex</option>
+                            <option>Gasolina</option>
+                            <option>Diesel</option>
+                            <option>Elétrico</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Câmbio</label>
+                        <select class="filter-select">
+                            <option>Automático</option>
+                            <option>Manual</option>
+                            <option>CVT</option>
+                        </select>
+                    </div>
+
+                    <button class="btn w-full mb-4">Aplicar Filtros</button>
+                </aside>
+
+                
+                <section>
+                    <div class="vehicles-grid">
+                        
+                        <a href="detalhes-toyota-corolla-2022.html" class="vehicle-card">
+                            <div class="vehicle-image">
+                                <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Toyota Corolla">
+                                <div class="vehicle-badges">
+                                    <span class="badge badge-featured">Destaque</span>
+                                </div>
+                                <div class="vehicle-actions">
+                                    <button class="action-btn">❤️</button>
+                                    <button class="action-btn">👁️</button>
+                                </div>
+                            </div>
+                            <div class="vehicle-content">
+                                <h3 class="vehicle-title">Toyota Corolla XEI</h3>
+                                <p class="vehicle-price">R$ 85.000</p>
+                                <div class="vehicle-specs">
+                                    <div class="spec">📅 2022</div>
+                                    <div class="spec">🏁 25.000 km</div>
+                                    <div class="spec">⛽ Flex</div>
+                                    <div class="spec">⚡ Automático</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        
+                        <div class="vehicle-card">
+                            <div class="vehicle-image">
+                                <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Toyota Corolla">
+                                <div class="vehicle-actions">
+                                    <button class="action-btn">❤️</button>
+                                    <button class="action-btn">👁️</button>
+                                </div>
+                            </div>
+                            <div class="vehicle-content">
+                                <h3 class="vehicle-title">Toyota Corolla GLI</h3>
+                                <p class="vehicle-price">R$ 75.000</p>
+                                <div class="vehicle-specs">
+                                    <div class="spec">📅 2021</div>
+                                    <div class="spec">🏁 35.000 km</div>
+                                    <div class="spec">⛽ Flex</div>
+                                    <div class="spec">⚡ Manual</div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                        <div class="vehicle-card">
+                            <div class="vehicle-image">
+                                <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Toyota Corolla">
+                                <div class="vehicle-badges">
+                                    <span class="badge badge-new">Novo</span>
+                                </div>
+                                <div class="vehicle-actions">
+                                    <button class="action-btn">❤️</button>
+                                    <button class="action-btn">👁️</button>
+                                </div>
+                            </div>
+                            <div class="vehicle-content">
+                                <h3 class="vehicle-title">Toyota Corolla XRS</h3>
+                                <p class="vehicle-price">R$ 95.000</p>
+                                <div class="vehicle-specs">
+                                    <div class="spec">📅 2023</div>
+                                    <div class="spec">🏁 12.000 km</div>
+                                    <div class="spec">⛽ Flex</div>
+                                    <div class="spec">⚡ Automático</div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                        <div class="vehicle-card">
+                            <div class="vehicle-image">
+                                <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Toyota Corolla">
+                                <div class="vehicle-actions">
+                                    <button class="action-btn">❤️</button>
+                                    <button class="action-btn">👁️</button>
+                                </div>
+                            </div>
+                            <div class="vehicle-content">
+                                <h3 class="vehicle-title">Toyota Corolla SE-G</h3>
+                                <p class="vehicle-price">R$ 68.000</p>
+                                <div class="vehicle-specs">
+                                    <div class="spec">📅 2020</div>
+                                    <div class="spec">🏁 45.000 km</div>
+                                    <div class="spec">⛽ Flex</div>
+                                    <div class="spec">⚡ Automático</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 3rem;">
+                        <button class="btn btn-outline btn-sm">← Anterior</button>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button class="btn btn-sm" style="background: var(--primary); color: white;">1</button>
+                            <button class="btn btn-outline btn-sm">2</button>
+                            <button class="btn btn-outline btn-sm">3</button>
+                            <span style="color: var(--muted-foreground);">...</span>
+                            <button class="btn btn-outline btn-sm">10</button>
+                        </div>
+                        <button class="btn btn-outline btn-sm">Próximo →</button>
+                    </div>
+
+                    
+                    <section style="margin-top: 3rem; padding: 2rem; background: var(--muted); border-radius: var(--radius);">
+                        <h3 style="margin-bottom: 1rem;">Buscas relacionadas</h3>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <a href="#" class="btn btn-outline btn-sm">Toyota Camry</a>
+                            <a href="#" class="btn btn-outline btn-sm">Honda Civic</a>
+                            <a href="#" class="btn btn-outline btn-sm">Nissan Sentra</a>
+                            <a href="#" class="btn btn-outline btn-sm">Volkswagen Jetta</a>
+                            <a href="#" class="btn btn-outline btn-sm">Hyundai Elantra</a>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">🚗</div>
+                        <h3>EliteMotors</h3>
+                    </div>
+                    <p>Há mais de 15 anos oferecendo os melhores veículos seminovos com qualidade garantida e atendimento personalizado.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="grade-produtos.html">Veículos</a></li>
+                        <li><a href="quem-somos.html">Quem Somos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📞 (11) 98765-4321</p>
+                    <p>✉️ contato@elitemotors.com.br</p>
+                    <p>📍 Av. Paulista, 1000<br>São Paulo - SP</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Seu email">
+                        <button class="btn">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 EliteMotors. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

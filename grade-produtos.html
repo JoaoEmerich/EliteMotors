@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Veículos - EliteMotors</title>
+    <link rel="stylesheet" href="elitemotors.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-top-content">
+                    <span>Segunda - Sábado: 8:00 - 18:00</span>
+                    <span>📞 (11) 98765-4321</span>
+                </div>
+            </div>
+            <div class="header-main">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><img src="https://sdmntpreastus.oaiusercontent.com/files/00000000-c36c-61f9-b200-13164c476d3d/raw?se=2025-08-21T00%3A16%3A38Z&sp=r&sv=2024-08-04&sr=b&scid=8ac1242c-59c5-5b3a-ad33-e90f1da83606&skoid=02b7f7b5-29f8-416a-aeb6-99464748559d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-20T17%3A59%3A27Z&ske=2025-08-21T17%3A59%3A27Z&sks=b&skv=2024-08-04&sig=vrzmU6T4TNsHGhZe9dIcOJEFjB6wNia6RH51dsa4N3c%3D" alt="" width="30px" height="30px"></div>
+                    <h1>EliteMotors</h1>
+                </a>
+                <nav class="nav">
+                    <a href="index.html">Início</a>
+                    <a href="grade-produtos.html" style="color: var(--primary);">Veículos</a>
+                    <a href="quem-somos.html">Quem Somos</a>
+                    <a href="contato.html">Contato</a>
+                </nav>
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Buscar veículos...">
+                    <button class="btn">🔍</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <section style="background: var(--muted); padding: 1rem 0;">
+        <div class="container">
+            <nav style="font-size: 0.875rem; color: var(--muted-foreground);">
+                <a href="index.html" style="text-decoration: none; color: inherit;">Início</a>
+                <span> / </span>
+                <span style="color: var(--primary);">Catálogo de Veículos</span>
+            </nav>
+        </div>
+    </section>
+
+    
+    <section style="padding: 2rem 0; background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%); color: white;">
+        <div class="container">
+            <div style="text-align: center;">
+                <h1 style="margin-bottom: 0.5rem;">Catálogo de Veículos</h1>
+                <p style="font-size: 1.125rem; color: rgba(255,255,255,0.9);">
+                    Descubra nossa seleção completa de veículos seminovos premium
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section style="padding: 1.5rem 0; background: white; border-bottom: 1px solid var(--border);">
+        <div class="container">
+            <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <span style="font-size: 0.875rem; color: var(--muted-foreground);">Filtros rápidos:</span>
+                <button class="btn btn-outline btn-sm">Todos</button>
+                <button class="btn btn-outline btn-sm">Sedã</button>
+                <button class="btn btn-outline btn-sm">SUV</button>
+                <button class="btn btn-outline btn-sm">Hatch</button>
+                <button class="btn btn-outline btn-sm">Pickup</button>
+                <button class="btn btn-outline btn-sm">Até R$ 50k</button>
+                <button class="btn btn-outline btn-sm">R$ 50k - R$ 100k</button>
+                <button class="btn btn-outline btn-sm">Acima R$ 100k</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <main class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                
+                <aside class="filters">
+                    <h3>Filtrar Veículos</h3>
+                    
+                    <div class="filter-group">
+                        <label>Categoria</label>
+                        <select class="filter-select">
+                            <option>Todas as categorias</option>
+                            <option>Sedã</option>
+                            <option>Hatchback</option>
+                            <option>SUV</option>
+                            <option>Pickup</option>
+                            <option>Utilitário</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Marca</label>
+                        <select class="filter-select">
+                            <option>Todas as marcas</option>
+                            <option>Toyota</option>
+                            <option>Honda</option>
+                            <option>Volkswagen</option>
+                            <option>Chevrolet</option>
+                            <option>Ford</option>
+                            <option>Hyundai</option>
+                            <option>Nissan</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Faixa de Preço</label>
+                        <div class="price-display">Até R$ 150.000</div>
+                        <input type="range" class="price-slider" min="20000" max="300000" value="150000">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--muted-foreground); margin-top: 0.5rem;">
+                            <span>R$ 20k</span>
+                            <span>R$ 300k</span>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Ano</label>
+                        <div class="filter-grid">
+                            <select class="filter-select">
+                                <option>Ano Mín.</option>
+                                <option>2010</option>
+                                <option>2015</option>
+                                <option>2020</option>
+                            </select>
+                            <select class="filter-select">
+                                <option>Ano Máx.</option>
+                                <option>2020</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Combustível</label>
+                        <select class="filter-select">
+                            <option>Todos</option>
+                            <option>Flex</option>
+                            <option>Gasolina</option>
+                            <option>Diesel</option>
+                            <option>Elétrico</option>
+                            <option>Híbrido</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Câmbio</label>
+                        <select class="filter-select">
+                            <option>Todos</option>
+                            <option>Automático</option>
+                            <option>Manual</option>
+                            <option>CVT</option>
+                        </select>
+                    </div>
+
+                    <button class="btn w-full mb-4">Aplicar Filtros</button>
+                    <button class="btn btn-outline w-full">Limpar Filtros</button>
+                </aside>
+
+                
+                <section>
+                    <div class="vehicles-header">
+                        <div>
+                            <h2>Todos os Veículos</h2>
+                            <p style="color: var(--muted-foreground);">Encontrados 24 veículos</p>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <span style="font-size: 0.875rem; color: var(--muted-foreground);">Ver:</span>
+                            <button class="btn btn-outline btn-sm">Grade</button>
+                            <button class="btn btn-ghost btn-sm">Lista</button>
+                            <select class="filter-select" style="width: 200px;">
+                                <option>Mais Relevante</option>
+                                <option>Menor Preço</option>
+                                <option>Maior Preço</option>
+                                <option>Mais Novo</option>
+                                <option>Menor KM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="vehicles-grid">
+                        
+                        <a href="detalhes-toyota-corolla-2022.html" class="vehicle-card">
+                            <div class="vehicle-image">
+                                <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2025/202508/20250818/toyota-corolla-2-0-vvtie-flex-xei-direct-shift-wmimagem13105944460.webp?s=fill&w=552&h=414&q=60" alt="Toyota Corolla">
+                                <div class="vehicle-badges">
+                                    <span class="badge badge-featured">Destaque</span>
+                                </div>
+                                <div class="vehicle-actions">
+                                    <button class="action-btn">❤️</button>
+                                    <button class="action-btn">👁️</button>
+                                </div>
+                            </div>
+                            <div class="vehicle-content">
+                                <h3 class="vehicle-title">Toyota Corolla XEI</h3>
+                                <p class="vehicle-price">R$ 85.000</p>
+                                <div class="vehicle-specs">
+                                    <div class="spec">📅 2022</div>
+                                    <div class="spec">🏁 25.000 km</div>
+                                    <div class="spec">⛽ Flex</div>
+                                    <div class="spec">⚡ Automático</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="detalhes-honda-civic-2023.html" class="vehicle-card">
+                            <div class="vehicle-image">
+                                <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2025/202508/20250809/honda-civic-2.0-di-e:hev-touring-ecvt-wmimagem13570002014.jpg?s=fill&w=552&h=414&q=60" alt="Honda Civic">
+                                <div class="vehicle-badges">
+                                    <span class="badge badge-new">Novo</span>
+                                </div>
+                                <div class="vehicle-actions">
+                                    <button class="action-btn">❤️</button>
+                                    <button class="action-btn">👁️</button>
+                                </div>
+                            </div>
+                            <div class="vehicle-content">
+                                <h3 class="vehicle-title">Honda Civic Sport</h3>
+                                <p class="vehicle-price">R$ 125.000</p>
+                                <div class="vehicle-specs">
+                                    <div class="spec">📅 2023</div>
+                                    <div class="spec">🏁 15.000 km</div>
+                                    <div class="spec">⛽ Flex</div>
+                                    <div class="spec">⚡ CVT</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        
+                         <a href="detalhes-bmw-x3-2021.html" class="vehicle-card">
+                        <div class="vehicle-card">
+                            <div class="vehicle-image">
+                                <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2025/202507/20250728/bmw-x3-2.0-16v-hibrido-x-line-xdrive30e-steptronic-wmimagem11474310886.jpg?s=fill&w=1920&h=1440&q=75" alt="BMW X3">
+                                <div class="vehicle-badges">
+                                    <span class="badge badge-featured">Destaque</span>
+                                </div>
+                                <div class="vehicle-actions">
+                                    <button class="action-btn">❤️</button>
+                                    <button class="action-btn">👁️</button>
+                                </div>
+                            </div>
+                            <div class="vehicle-content">
+                                <h3 class="vehicle-title">BMW X3 xDrive</h3>
+                                <p class="vehicle-price">R$ 185.000</p>
+                                <div class="vehicle-specs">
+                                    <div class="spec">📅 2021</div>
+                                    <div class="spec">🏁 32.000 km</div>
+                                    <div class="spec">⛽ Gasolina</div>
+                                    <div class="spec">⚡ Automático</div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+
+                        <a href="detalhes-mercedes-c180-2022.html" class="vehicle-card">
+                        <div class="vehicle-card">
+                            <div class="vehicle-image">
+                                <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2025/202506/20250616/mercedesbenz-c-200-1.5-eq-boost-hibrido-amg-line-9gtronic-wmimagem11324701767.jpg?s=fill&w=1920&h=1440&q=75" alt="Mercedes C180">
+                                <div class="vehicle-actions">
+                                    <button class="action-btn">❤️</button>
+                                    <button class="action-btn">👁️</button>
+                                </div>
+                            </div>
+                            <div class="vehicle-content">
+                                <h3 class="vehicle-title">Mercedes C180</h3>
+                                <p class="vehicle-price">R$ 165.000</p>
+                                <div class="vehicle-specs">
+                                    <div class="spec">📅 2022</div>
+                                    <div class="spec">🏁 28.000 km</div>
+                                    <div class="spec">⛽ Flex</div>
+                                    <div class="spec">⚡ Automático</div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+
+                        <a href="detalhes-audi-a4-2023.html" class="vehicle-card">
+                        <div class="vehicle-card">
+                            <div class="vehicle-image">
+                                <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2025/202507/20250729/audi-a4-2.0-tfsi-mhev-s-line-s-tronic-wmimagem09162829929.jpg?s=fill&w=1920&h=1440&q=75" alt="Audi A4">
+                                <div class="vehicle-badges">
+                                    <span class="badge badge-new">Novo</span>
+                                </div>
+                                <div class="vehicle-actions">
+                                    <button class="action-btn">❤️</button>
+                                    <button class="action-btn">👁️</button>
+                                </div>
+                            </div>
+                            <div class="vehicle-content">
+                                <h3 class="vehicle-title">Audi A4 Avant</h3>
+                                <p class="vehicle-price">R$ 195.000</p>
+                                <div class="vehicle-specs">
+                                    <div class="spec">📅 2023</div>
+                                    <div class="spec">🏁 18.000 km</div>
+                                    <div class="spec">⛽ Gasolina</div>
+                                    <div class="spec">⚡ Automático</div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+
+                        <a href="detalhes-jeep-compass-2022.html" class="vehicle-card">
+                        <div class="vehicle-card">
+                            <div class="vehicle-image">
+                                <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2025/202508/20250810/jeep-compass-1.3-t270-turbo-flex-longitude-at6-wmimagem02332490741.jpg?s=fill&w=1920&h=1440&q=75" alt="Jeep Compass">
+                                <div class="vehicle-actions">
+                                    <button class="action-btn">❤️</button>
+                                    <button class="action-btn">👁️</button>
+                                </div>
+                            </div>
+                            <div class="vehicle-content">
+                                <h3 class="vehicle-title">Jeep Compass Sport</h3>
+                                <p class="vehicle-price">R$ 115.000</p>
+                                <div class="vehicle-specs">
+                                    <div class="spec">📅 2022</div>
+                                    <div class="spec">🏁 22.000 km</div>
+                                    <div class="spec">⛽ Flex</div>
+                                    <div class="spec">⚡ Automático</div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+
+                        
+                         <a href="detalhes-nissan-kicks-2021.html" class="vehicle-card">
+                        <div class="vehicle-card">
+                            <div class="vehicle-image">
+                                <img src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2025/202508/20250818/nissan-kicks-1.6-16v-flexstart-active-xtronic-wmimagem17455458927.jpg?s=fill&w=1920&h=1440&q=75" alt="Nissan Kicks">
+                                <div class="vehicle-actions">
+                                    <button class="action-btn">❤️</button>
+                                    <button class="action-btn">👁️</button>
+                                </div>
+                            </div>
+                            <div class="vehicle-content">
+                                <h3 class="vehicle-title">Nissan Kicks SV</h3>
+                                <p class="vehicle-price">R$ 78.000</p>
+                                <div class="vehicle-specs">
+                                    <div class="spec">📅 2021</div>
+                                    <div class="spec">🏁 38.000 km</div>
+                                    <div class="spec">⛽ Flex</div>
+                                    <div class="spec">⚡ Manual</div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+
+                        <a href="detalhes-renault-sandero-2020.html" class="vehicle-card">
+                        <div class="vehicle-card">
+                            <div class="vehicle-image">
+                                <img src="https://storage.napista.com.br/static/photos/3c57597e-4f6b-43b1-9fac-d01324b6b153_5ffdbb06-29a4-48f6-bb92-19ae35f1ba35" alt="Renault Sandero">
+                                <div class="vehicle-actions">
+                                    <button class="action-btn">❤️</button>
+                                    <button class="action-btn">👁️</button>
+                                </div>
+                            </div>
+                            <div class="vehicle-content">
+                                <h3 class="vehicle-title">Renault Sandero</h3>
+                                <p class="vehicle-price">R$ 45.000</p>
+                                <div class="vehicle-specs">
+                                    <div class="spec">📅 2020</div>
+                                    <div class="spec">🏁 55.000 km</div>
+                                    <div class="spec">⛽ Flex</div>
+                                    <div class="spec">⚡ Manual</div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+
+                    
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 3rem;">
+                        <button class="btn btn-outline btn-sm">← Anterior</button>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button class="btn btn-sm" style="background: var(--primary); color: white;">1</button>
+                            <button class="btn btn-outline btn-sm">2</button>
+                            <button class="btn btn-outline btn-sm">3</button>
+                            <span style="color: var(--muted-foreground);">...</span>
+                            <button class="btn btn-outline btn-sm">8</button>
+                        </div>
+                        <button class="btn btn-outline btn-sm">Próximo →</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">🚗</div>
+                        <h3>EliteMotors</h3>
+                    </div>
+                    <p>Há mais de 15 anos oferecendo os melhores veículos seminovos com qualidade garantida e atendimento personalizado.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="grade-produtos.html">Veículos</a></li>
+                        <li><a href="quem-somos.html">Quem Somos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📞 (11) 98765-4321</p>
+                    <p>✉️ contato@elitemotors.com.br</p>
+                    <p>📍 Av. Paulista, 1000<br>São Paulo - SP</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Seu email">
+                        <button class="btn">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 EliteMotors. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
